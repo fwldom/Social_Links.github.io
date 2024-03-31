@@ -1,0 +1,85 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    overflow: hidden;
+}
+.backprof {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: hsl(0, 0%, 8%);
+}
+.profile {
+    background: hsl(0, 0%, 12%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: hsl(0, 0%, 100%);
+    min-width: 300px;
+    min-height: 500px;
+    font-family: Inter,sans-serif;
+}
+.profile .imgprof {
+    width: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    height: 100px;
+}
+.profile .loc {
+    color :hsl(75, 94%, 57%);
+    font-family: Inter, serif;
+    font-weight: 400;
+}
+.profile .bio {
+    font-family: Inter,sans-serif;
+    font-weight: 400;
+}
+.profile a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    flex: 1;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: hsl(0, 0%, 20%);
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 250px;
+}
+.profile a:visited {
+    color: hsl(0, 0%, 100%);
+}
+.profile a:hover {
+    color: hsl(0, 0%, 15%);
+    transition: 0.3s;
+    background: hsl(75, 94%, 57%);
+}
+@media screen and (min-width: 800px) {
+    body {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .backprof {
+        width: 100%;
+        height: 95%;
+        position: fixed;
+    }
+    .profile {
+        width: 10%;
+        height: 80%;
+        margin-top: 5%;
+        margin-left: 32%;
+
+    }
+
+}
